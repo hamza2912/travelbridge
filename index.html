@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBridge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    
+    <!------------- HEADER SECTION --------------->
+
+    <header class="absolute top-5 w-full z-50">
+        <div class="bg-navbar lg:px-36 px-12 py-5">
+            <div class="flex justify-between flex-row items-center">
+                <div class="flex font-medium items-center lg:mb-0">
+                    <a class="text-2xl text-white cursor-pointer">Travel<span class="text-logo">Bridge</span></a>
+                    <img class="w-8 h-auto" src="images/travelbridge_logo.png" alt="travelbridge_logo">
+                </div>
+                <span  id="nav-toggle" class="text-white text-2xl cursor-pointer lg:hidden">&#9776</span>
+                <nav class="lg:flex text-base hidden font-medium">
+                    <ul class="flex lg:flex-row flex-col">
+                        <li><a href="#about" class="mr-5 text-white cursor-pointer hover:text-green-400 transition-all">ABOUT</a></li>
+                        <li><a href="#integration" class="mr-5 text-white cursor-pointer hover:text-green-400 transition-all">INTEGRATION</a></li>
+                        <li><a href="#pricing" class="mr-5 text-white cursor-pointer hover:text-green-400 transition-all">PRICING</a></li>
+                        <li><a href="#contact" class="mr-5 text-white cursor-pointer hover:text-green-400 transition-all">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="nav-content" class="text-base hidden lg:hidden font-medium">
+                <ul class="flex flex-col items-center">
+                    <li class="mt-2"><a href="#about" class="text-white cursor-pointer hover:text-green-400 transition-all">ABOUT</a></li>
+                    <li class="mt-2"><a href="#integration" class="text-white cursor-pointer hover:text-green-400 transition-all">INTEGRATION</a></li>
+                    <li class="mt-2"><a href="#pricing" class="text-white cursor-pointer hover:text-green-400 transition-all">PRICING</a></li>
+                    <li class="mt-2"><a href="#contact" class="text-white cursor-pointer hover:text-green-400 transition-all">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-------------  HOME SECTION WITH SLIDER --------------->
+
+    <section class="owl-carousel owl-theme w-full h-screen">
+        <!-------------  SLIDER 1 --------------->
+        <div class="item bg-home w-full h-screen py-12 lg:px-36 px-12">
+            <div class="w-full h-full flex items-center">
+                <div class="lg:w-1/2 w-full">
+                    <h1 class="lg:text-6xl text-4xl font-semibold text-white leading-snug" data-aos="fade-right" data-aos-duration="1500">Travel and Hospitality connectivity OS</h1>
+                    <p class="text-white lg:w-3/4 w-full text-justify mt-4 text-sm" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">We believe that there must be a simpler solution that provides a travel and hospitality tech company agility and peace of mind!</p>
+                    <div class="w-full flex lg:flex-row flex-col">
+                        <button class="lg:w-1/4 w-1/2 text-white outline-none px-4 py-3 rounded-full mt-14 mr-4 text-sm bg-blue-400 hover:bg-blue-600" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">START NOW</button>
+                        <button class="lg:w-1/4 w-1/2 text-black bg-white outline-none px-4 py-3 rounded-full lg:mt-14 mt-4 text-sm hover:bg-pink-400 hover:text-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------  SLIDER 2 --------------->
+        <div class="item bg-home w-full h-screen py-12 lg:px-36 px-12">
+            <div class="w-full h-full flex items-center">
+                <div class="lg:w-1/2 w-full">
+                    <h1 class="lg:text-6xl text-4xl font-semibold text-white leading-snug" data-aos="fade-right" data-aos-duration="1500">Travel and Hospitality connectivity OS</h1>
+                    <p class="text-white lg:w-3/4 w-full text-justify mt-4 text-sm" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">We believe that there must be a simpler solution that provides a travel and hospitality tech company agility and peace of mind!</p>
+                    <div class="w-full flex lg:flex-row flex-col">
+                        <button class="lg:w-1/4 w-1/2 text-white outline-none px-4 py-3 rounded-full mt-14 mr-4 text-sm bg-blue-400 hover:bg-blue-600" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">START NOW</button>
+                        <button class="lg:w-1/4 w-1/2 text-black bg-white outline-none px-4 py-3 rounded-full lg:mt-14 mt-4 text-sm hover:bg-pink-400 hover:text-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------  SECTION NO 1 ABOUT--------------->
+
+    <section id="about" class="w-full lg:h-screen h-auto lg:px-36 px-12 py-12">
+        <div class="w-full h-full grid lg:grid-cols-2 ">
+            <div class="w-full h-full flex items-center">
+                <img class="lg:w-4/5 w-full h-auto" src="./images/systems.png"  alt="Connecting 2 Systems"  data-aos="fade-left" data-aos-duration="1500">
+            </div>
+            <div class="w-full h-full flex flex-col justify-center">
+                <h1 class="text-6xl font-bold quotation mb-0 lg:mt-0 mt-4" data-aos="fade-right" data-aos-duration="1500">"</h1>
+                <h1 class="lg:text-4xl text-2xl font-bold -mt-8" data-aos="fade-right" data-aos-duration="1500">CONNECTING 2 SYSTEMS CAN BE A COMPLEX AND OVERWHELMING TASK.</h1>
+                <p class="text-justify mt-4 text-gray-500" data-aos="fade-right" data-aos-duration="1500">Lack of internal resources, high cost, complexity and bureaucracy, are only a few roadblocks/challenges each new integration project faces.
+                    We believe that there must be a simpler solution that provides a travel and hospitality tech company agility and peace of mind! We built, and are expanding <b>-TravelBridge.</b>
+                </p>
+                <h2 class="mt-6 font-semibold" data-aos="fade-right" data-aos-duration="1500">Jose Da Silva</h2>
+                <p class="text-gray-500" data-aos="fade-right" data-aos-duration="1500">CEO @ TravelBridge.io</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------  SECTION NO 2 INTEGRATION--------------->
+
+    <section id="integration" class="w-full lg:h-screen h-auto bg-gray-100 lg:px-36 px-12 lg:py-24 py-12">
+      <div class="grid lg:grid-cols-2 lg:gap-0 gap-12">
+        <div class="w-full">
+            <h1 class="lg:mt-14 lg:text-4xl text-2xl font-semibold" data-aos="fade-right" data-aos-duration="1500">A Typical integration process</h1>
+            <p class="lg:w-3/4 w-full text-justify lg:text-xl text-base mt-4 text-gray-700" data-aos="fade-right" data-aos-duration="1500">A standard integration takes between 4 to 6 months from start to end, includes<br><b>3 major blocks:</b></p>
+              <ul class="lg:mt-12 mt-8">
+                  <li class="mt-4" data-aos="fade-down"><i class="fas fa-square-full mr-2 text-blue-500"></i><b>CONTRACTING</b> / Average time: 1 month</li>
+                  <li class="mt-4" data-aos="fade-down"><i class="fas fa-square-full mr-2 text-orange-500"></i><b>DEVELOPMENT</b> / Average time: 2 months</li>
+                  <li class="mt-4" data-aos="fade-down"><i class="fas fa-square-full mr-2 text-purple-500"></i><b>CERTIFICATION & PILOT</b> / Average time: 1 month</li>
+              </ul>
+              <p class="lg:mt-12 mt-8 text-justify lg:w-3/4 w-full text-gray-600 font-medium" data-aos="fade-down" data-aos-duration="1500">TravelBridge eliminates the development from your roadmap,
+                  optimizingthe integration project, and saving you an average of 2 months. 
+              </p>
+        </div>
+        <div class="grid lg:grid-cols-3 grid-cols-1">
+              <div class="lg:col-span-2">
+                  <img class="w-full h-auto" src="images/step1.png" alt="Step 1" data-aos="fade-right" data-aos-duration="1500">
+              </div>
+              <div class="lg:mt-16 lg:ml-4">
+                  <h1 class="font-semibold" data-aos="fade-out" data-aos-duration="1500">CONTRACTING</h1>
+                  <div class="w-8 h-0.5 bg-black bg-gradient-to-r from-cyan-600 to-green-400"></div>
+                  <p class="mt-2 text-gray-500 font-medium" data-aos="fade-out" data-aos-duration="1500">Contract negotiation and signup</p>
+              </div>
+              <div class="lg:mt-12 hidden lg:block">
+                  <h1 class="font-semibold" data-aos="fade-out" >DEVELOPMENT </h1>
+                  <div class="w-8 h-0.5 bg-black bg-gradient-to-r from-red-600 to-amber-500"></div>
+                  <p class="text-gray-500 font-medium mt-2" data-aos="fade-out" data-aos-duration="1500">Connectivity development and internal testing</p>
+              </div>
+              <div class="lg:col-span-2 hidden lg:block">
+                  <img class="w-full h-auto" src="images/step2.png" alt="Step 2" data-aos="fade-left" data-aos-duration="1500">
+              </div>
+              <div class="lg:col-span-2 lg:hidden">
+                <img class="w-full h-auto" src="images/step2.png" alt=" Step 2" data-aos="fade-left" data-aos-duration="1500">
+                </div>
+              <div class="lg:mt-12 lg:hidden">
+                <h1 class="font-semibold" data-aos="fade-out">DEVELOPMENT </h1>
+                <div class="w-8 h-0.5 bg-black bg-gradient-to-r from-red-600 to-amber-500"></div>
+                <p class="text-gray-500 font-medium mt-2" data-aos="fade-out">Connectivity development and internal testing</p>
+            </div>    
+              <div class="lg:col-span-2">
+                  <img class="w-full h-auto" src="images/step3.png" alt=" Step 3" data-aos="fade-right" data-aos-duration="1500">
+              </div>
+              <div class="mt-6 lg:ml-4">
+                  <h1 class="font-semibold" data-aos="fade-out" data-aos-duration="1500">CERTIFICATION & PILOT </h1>
+                  <div class="w-8 h-0.5 bg-black bg-gradient-to-r from-fuchsia-500 to-pink-500"></div>
+                  <p class="text-gray-500 font-medium mt-2" data-aos="fade-out">Live partner testing, interface certification and pilot phase and internal testing</p>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------  SECTION NO 3 INTEGRATION--------------->
+
+    <section class="w-full lg:h-screen h-auto grid lg:grid-cols-2 lg:px-36 px-12 lg:py-24 py-12">
+        <div class="grid lg:gap-2 gap-12 lg:grid-cols-2">
+            <div class="w-full flex flex-col justify-center" >
+                <div>
+                    <h1 class="font-semibold" data-aos="fade-right" data-aos-duration="1500">YOU </h1>
+                    <div class="w-5 h-0.5 bg-black bg-gradient-to-r from-cyan-600 to-green-400"></div>
+                    <p class="mt-2 text-gray-600 font-medium" data-aos="fade-right" data-aos-duration="1500">Your travel tech system <br/>
+                        PMS | CRS | RMS | OTA | CHATBOT
+                    </p>
+                </div>
+                <div>
+                    <h1 class="font-semibold lg:mt-20 mt-8" data-aos="fade-right" data-aos-duration="1500">TRAVELBRIDGE</h1>
+                    <div class="w-5 h-0.5 bg-black bg-gradient-to-r from-red-600 to-amber-500"></div>
+                    <p class="mt-2 text-gray-600 font-medium" data-aos="fade-right" data-aos-duration="1500">TravelBridge package, seamiess
+                        integration with your system
+                    </p>
+                </div>
+                <div>
+                    <h1 class="font-semibold lg:mt-20 mt-8" data-aos="fade-right" data-aos-duration="1500">PARTNER</h1>
+                    <div class="w-5 h-0.5 bg-black bg-gradient-to-r from-fuchsia-500 to-pink-500"></div>
+                    <p class="mt-2 text-gray-600 font-medium" data-aos="fade-right" data-aos-duration="1500">External partner software<br/>
+                        PMS | CRS | RMS | OTA | CHATBOT
+                    </p>
+                </div>
+                
+            </div>
+            <div class="w-full">
+                <img class="w-4/5 mx-auto h-auto" src="./images/img_03b.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+            </div>
+        </div>
+        <div class="lg:pl-12 flex flex-col justify-center">
+            <h1 class="lg:text-left lg:text-4xl text-2xl font-semibold mt-4 lg:mt-0" data-aos="fade-left" data-aos-duration="1500">WHATS IS TRAVELBRIDGE?</h1>
+            <p class="lg:mt-8 mt-6 text-lg text-gray-400 font-medium" data-aos="fade-left" data-aos-duration="1500">TravelBridge is an open source software that connects 
+                once to your platform and allows you to connect everyone 
+                        just by adding a partner on the marketplace. </p>
+        </div>
+    </section>
+
+    <!-------------  SECTION NO 4 INTEGRATION--------------->
+
+    <section class="w-full lg:h-screen h-auto bg-gray-100 py-12 lg:px-36 px-12">
+        <h1 class="lg:text-4xl text-2xl font-bold text-center lg:mb-12 mb-8" data-aos="fade-down" data-aos-duration="1000">Native: 2 way integration</h1>
+        <div class="flex flex-row justify-between lg:px-5 mb-4">
+            <h1 class="uppercase font-semibold lg:text-xl text-xs" data-aos="fade-right" data-aos-duration="1000">Your Stack</h1>
+            <h1 class="uppercase font-semibold lg:text-xl text-xs text-center" data-aos="fade-left" data-aos-duration="1000">Partner Tech <br class="lg:hidden"> Systems</h1>
+        </div>
+        <div class="w-full mb-5">
+            <img class="w-full h-auto" src="./images/native.png" width="80%" alt="Native 2 way Integration" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div class="lg:w-1/5 w-full flex flex-col font-medium text-gray-600 lg:pl-5">
+            <p class="font-semibold text-black text-sm">Communication schemas:</p>
+            <p class="text-sm">XML | JSON | CSV | custom</p>
+            <p class="text-xs mt-4">SOAP | REST | HTTP</p>
+        </div>
+    </section>
+
+    <!-------------  SECTION NO 5 PRICING--------------->
+
+    <section id='pricing' class="w-full h-screen flex items-center bg-vendor">
+        <div class="lg:px-36 px-12">
+            <div>
+                <h1 class="text-center text-white lg:text-5xl text-3xl font-bold" data-aos="fade-down" data-aos-duration="1500">No more vendor locked in</h1>
+                <p class="lg:w-3/4 w-full mx-auto lg:text-2xl text-lg text-center mt-12 text-gray-200" data-aos="fade-out" data-aos-duration="1500">With TravelBridge open source software, you are free to, host the system on
+                    your own cloud infrastructure, extend the system by using your internal team. </p>
+                <p class="text-center font-bold text-white lg:text-xl text-lg lg:mt-12 mt-8" data-aos="fade-up" data-aos-duration="1500">We believe no business should be vendor locked in</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------  SECTION NO 6--------------->
+
+    <section class="w-full lg:h-scren h-auto lg:px-36 px-12 bg-service">
+            <div class="w-full h-full grid lg:grid-cols-2 pt-10">
+                <div class="flex flex-col justify-center">
+                    <h1 class="lg:text-4xl text-2xl font-bold" data-aos="fade-in" data-aos-duration="1500">Self Service Integration Portal</h1>
+                    <h2 class="text-xl font-medium mt-4 text-green" data-aos="fade-in" data-aos-duration="1500">Self-Serving partner integration</h2>
+                    <p class="text-lg font-medium text-gray-600" data-aos="fade-right" data-aos-duration="1500">Every partner who wants to integrate with tech system,
+                        can use the self-service integrations Portal to:
+                    </p>
+                    <ul class="list-disc font-semibold ml-4 mt-3" data-aos="fade-right" data-aos-duration="1500">
+                        <li >Apple for a testing account</li>
+                        <li>Get the connection keys</li>
+                        <li>Self Service integration validation</li>
+                        <li>Pre-certification tests</li>
+                    </ul>
+                    <h2 class="text-xl font-medium mt-4 text-green" data-aos="fade-in" data-aos-duration="1500">360<sup>0</sup> Connectivity Overview</h2>
+                    <p class="text-lg font-medium text-gray-600" data-aos="fade-right" data-aos-duration="1500">Partner connector statistics and alerts</p>
+                    <ul class="list-disc font-semibold ml-4 mt-3" data-aos="fade-right" data-aos-duration="1500">
+                        <li>Time of response</li>
+                        <li>Up/Down time alerts</li>
+                        <li>Time to process a request</li>
+                    </ul>
+                </div>
+                <div class="w-full flex items-center mt-4 lg:mt-0">
+                    <img class="lg:w-4/5 w-full h-auto" src="./images/portal.png" alt="Self Service Portal" data-aos="fade-left">
+                </div>
+            </div>
+    </section>
+
+    <!-------------  SECTION NO 7 CONTACT--------------->
+
+    <section id="contact" class="w-full bg-about bg-gray-100 py-12 lg:px-36 px-12">
+        <h1 class="lg:text-4xl text-2xl text-center font-bold" data-aos="fade-up" data-aos-duration="1500">Who we are</h1>
+        <h2 class="text-xl text-center font-medium lg:mt-12 mt-8 text-gray-600" data-aos="fade-up" data-aos-duration="1500">Still WORK in progress, need to get authorization to present their logos</h2>
+        <p class="text-base font-medium lg:w-3/4 w-full mx-auto text-center mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1500">TravelBridge is a product made by KOI System, a specialized connectivity team founded by Jose da Silva, a 14 years
+            industry veteran, that helped many companies to grow by optimizing the integration process over the past decade.
+        </p>
+        <h3 class="text-center text-lg font-medium mt-4" data-aos="fade-up" data-aos-duration="1500">Some of the companies we helped to grow by connecting their system to partners:</h3>
+        <div class="grid lg:grid-cols-3 gap-8 mt-16">
+            <div class="flex flex-col">
+                <img class="w-full h-auto" src="./images/logo_guestcentric.jpg" alt="logo_guestcentric" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="w-full">
+                    <p class="lg:mt-8 mt-5 lg:w-4/5 w-full mx-auto font-medium" data-aos="zoom-in" data-aos-duration="1500">The Trusted Reservation solution for 
+                        Premium Hotels in Over 50 Countries.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <img class="w-full h-auto" src="./images/logo_xlr8.jpg" alt="logo_xlr8" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                <div class="w-full">
+                    <p class="lg:mt-8 mt-5 lg:w-4/5 w-full mx-auto font-medium" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">The new generation of RMS has arrived.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <img class="w-full h-auto" src="./images/logo_doinn.jpg" alt="logo_doinn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                <div class="w-full">
+                    <p class="lg:mt-8 mt-5 lg:w-4/5 w-full mx-auto font-medium" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">Doinn is all help you ever needed. We 
+                        bring local accommodation owners or 
+                        managers in touch with the best cleaning
+                        and laundry services.
+                    </p>
+                </div>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------  INFO SECTION--------------->
+
+    <section class="w-full lg:px-36 px-12 py-24">
+        <div class="grid lg:grid-cols-3 lg:gap-0 gap-12">
+            <div class="lg:w-3/5 w-full">
+                <h1 class="text-3xl font-medium">We built, and
+                    are expanding
+                </h1>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold">TravelBridge.io</h2>
+                <div class="mt-1">
+                    <p class="text-gray-500">Travel and Hospitality Connectivity OS</p>
+                    <p class="text-gray-500">jose@travelbridge.io | +351 961 425 529</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex font-medium items-center mb-4 lg:mb-0">
+                    <a class="text-2xl text-blue-600 cursor-pointer">Travel<span class="text-logo">Bridge</span></a>
+                    <img class="w-8 h-auto" src="images/travelbridge_logo.png" alt="travelbridge_logo">
+                </div>
+                <div class="mt-2 text-gray-500">
+                    <a class="mr-3" href="#about">About</a>
+                    <a class="mr-3" href="#integration">Integrations</a>
+                    <a class="mr-3" href="#pricing">Pricing</a>
+                    <a class="mr-3" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------  FOOTER--------------->
+
+    <footer class="w-full h-64 lg:px-36 px-12">
+        <div class="flex lg:flex-row flex-col items-center lg:justify-between">
+            <div>
+                <p class="text-white text-sm mt-6"><i class="far fa-copyright mr-2"></i>2021 TravelBridge-All right reserved</p>
+            </div>
+            <div class="mt-6">
+                <a class="text-sm text-white mr-4" href="#">Privacy policy</a>
+                <a class="text-sm text-white" href="#">Terms and services</a>
+           </div>
+        </div>
+    </footer>
+
+    <!-------------  SCRIPT SECTION --------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                // nav: true,
+                dots: true,
+                autoplay:true,
+                pagination: true,
+                autoplayTimeout:5000,
+                items: 1,
+            })
+            $('#nav-toggle').on('click', function (e) {
+                e.stopImmediatePropagation();
+                $('#nav-content').slideToggle();
+            });
+            $('body').on('click', function () {
+                const windowWidth = $(window).width();
+                if (windowWidth < 768) {
+                    $('#nav-content').slideUp();
+                }
+            });
+    });
+    </script>
+    <script>
+        $(function() {AOS.init();});
+    </script>
+
+</body>
+</html>
