@@ -42,7 +42,8 @@ html{
 .bg-about {
     background: url('./images/bkg_who.jpg');
     width: 100%;
-    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 footer{
     background: url('./images/bkg_rodape.jpg');
